@@ -4,8 +4,12 @@ body {
     align-items: center;
     margin: 0;
     background-color: rgba(234, 233, 232, 0.778);
+    min-height: 100vh;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 .header {
     font-size: 60px;
     font-weight: 900;
@@ -24,7 +28,7 @@ ul {
     gap: 100px;
 }
 
-a {
+ul > a {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -36,7 +40,7 @@ a {
 
 .opo {
     width: 550px;
-    height: 900px;
+    height: 100px;
     border: 2px solid rgba(0, 0, 0, 0.244);
     margin: 10px;
 }
@@ -46,11 +50,85 @@ h3 {
     font-size: 35px;
 }
 
+.footer > a {
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .footer {
     background-color: black;
-    color: white;
     width: 100%;
     text-align: center;
-    font-size: 25px;
     padding: 20px;
+    margin-top: auto;
+}
+
+
+.contain {
+    border: 2px solid rgba(0, 0, 0, 0.244);
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: auto;
+}
+
+.contain > .story > img {
+    width:300px;
+}
+
+.contain > h3 {
+    margin: 0px;
+}
+
+.contain > .story > .description > p {
+    width: 300px;
+    padding-left:15px;
+    margin: 0px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contain > .story > .description {
+    display: flex;
+    flex-direction: column;
+}
+
+.contain > .story > .description > .read {
+    margin-top: auto;
+    text-align: right;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contain > .story {
+    display:flex;
+    padding: 10px 10px;
+}
+
+.opowiadanie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+.opowiadanie > img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.opowiadanie > .text {
+    white-space: pre-line;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stars {
+    font-size: 50px;
+    text-align: center;
+    color: rgba(57, 21, 2, 0.634);
+    margin: 15px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
